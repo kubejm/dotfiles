@@ -97,3 +97,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder
  
 # Delete local branches merged to master
 alias gbpurge='git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d'
+
+# vi mode
+bindkey -v
