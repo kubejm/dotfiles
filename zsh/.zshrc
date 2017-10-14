@@ -100,3 +100,8 @@ alias gbpurge='git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 
 
 # vi mode
 bindkey -v
+
+# Setting ag as the default source for fzf
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
