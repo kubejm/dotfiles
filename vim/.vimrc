@@ -23,6 +23,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'fatih/vim-go'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' 
+Plug 'junegunn/vim-xmark', { 'do': 'make' }
 Plug 'mattn/emmet-vim'
 Plug 'mxw/vim-jsx'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -55,6 +56,17 @@ noremap <F3> :Autoformat<CR>
 " cursorline
 set cursorline
 
+" jsx highlighting and indenting for .js files
+let g:jsx_ext_required = 0
+
 " fzf
 nnoremap <c-p> :FZF<cr>
 nnoremap <leader>z :Ag<cr>
+
+" Turn backup off
+set nobackup
+set nowb
+set noswapfile
+
+" map jk for escape
+:imap jk <Esc>
