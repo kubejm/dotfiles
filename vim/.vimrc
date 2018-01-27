@@ -70,3 +70,9 @@ set noswapfile
 
 " map jk for escape
 :imap jk <Esc>
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
