@@ -49,6 +49,7 @@ let g:airline#extensions#tabline#show_splits = 0
 " NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>n :NERDTreeFind<CR>
+let NERDTreeShowHidden=1
  
 " Autoformat
 noremap <F3> :Autoformat<CR>

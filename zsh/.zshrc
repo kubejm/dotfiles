@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+# ZSH_THEME=""
  
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -104,4 +104,13 @@ bindkey -v
 # Setting ag as the default source for fzf
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
+# Is this necessary?
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# alias exa
+alias l=exa
+alias ls=exa
+
+# load pure
+autoload -U promptinit; promptinit
+prompt pure
