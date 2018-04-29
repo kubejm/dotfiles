@@ -54,8 +54,8 @@ let NERDTreeShowHidden=1
 " Autoformat
 noremap <F3> :Autoformat<CR>
  
-" cursorline
-set cursorline
+" cursorline, turning off temporarily, introducing lag
+" set cursorline
 
 " jsx highlighting and indenting for .js files
 let g:jsx_ext_required = 0
