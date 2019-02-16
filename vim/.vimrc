@@ -24,6 +24,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'fatih/vim-go'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' 
+Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-xmark', { 'do': 'make' }
 Plug 'mattn/emmet-vim'
 Plug 'mxw/vim-jsx'
@@ -33,6 +34,9 @@ Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-surround'
+Plug 'aklt/plantuml-syntax'
+Plug 'scrooloose/vim-slumlord'
  
 " Initialize plugin system
 call plug#end()
@@ -78,3 +82,9 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
