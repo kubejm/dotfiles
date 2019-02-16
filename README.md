@@ -15,6 +15,7 @@ Establishes symlinks for:
  * [vim-plug](https://github.com/junegunn/vim-plug) for plugin management
  * urlview
  * ripgrep
+ * z
 
 ### Install
 

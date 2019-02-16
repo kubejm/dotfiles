@@ -100,17 +100,33 @@ alias gbpurge='git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 
 
 # vi mode
 bindkey -v
+export KEYTIMEOUT=1
+
+# notes
+alias sp='vim ~/notes/scratchpad-$(date +"%m-%d-%Y").md'
 
 # Setting ag as the default source for fzf
-export FZF_DEFAULT_COMMAND='ag -g ""'
-
-# Is this necessary?
+#export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # alias exa
 alias l=exa
 alias ls=exa
 
+# sublime
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
 # load pure
 autoload -U promptinit; promptinit
 prompt pure
+
+# Move next only if `homebrew` is installed
+if command -v brew >/dev/null 2>&1; then
+  # Load rupa's z if installed
+  # /usr/local/ used to be derived from 'brew --prefix'
+  [ -f /usr/local/etc/profile.d/z.sh ] && source /usr/local/etc/profile.d/z.sh
+fi
+
+# dev tools
+export PATH=$PATH:~/dev/tools
