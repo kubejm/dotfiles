@@ -4,6 +4,7 @@ colorscheme predawn
 set tabstop=2 shiftwidth=2 expandtab
 set autoindent
 set smartindent
+set cindent
  
 set number
 set clipboard=unnamed
