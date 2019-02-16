@@ -13,6 +13,8 @@ Establishes symlinks for:
  * [tmux-MacOSX-pasteboard](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard) for fixing copy/paste with tmux
  * [tmux-plugin-manager](https://github.com/tmux-plugins/tpm) for managing tmux plugins
  * [vim-plug](https://github.com/junegunn/vim-plug) for plugin management
+ * urlview
+ * ripgrep
 
 ### Install
 
