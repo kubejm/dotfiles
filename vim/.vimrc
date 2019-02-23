@@ -37,6 +37,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord'
+
+" trying these out
+Plug 'tpope/vim-fugitive'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'derekwyatt/vim-scala'
  
 " Initialize plugin system
 call plug#end()
