@@ -43,6 +43,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'derekwyatt/vim-scala'
+Plug 'scrooloose/nerdcommenter'
  
 " Initialize plugin system
 call plug#end()
