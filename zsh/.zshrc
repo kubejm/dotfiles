@@ -130,3 +130,14 @@ fi
 
 # dev tools
 export PATH=$PATH:~/dev/tools
+
+# antlr
+export CLASSPATH=".:/usr/local/lib/antlr-4.7.2-complete.jar:$CLASSPATH"
+alias antlr4='java -jar /usr/local/lib/antlr-4.7.2-complete.jar'
+alias grun='java org.antlr.v4.gui.TestRig'
+
+# plantuml
+alias plantuml='java -jar /usr/local/lib/plantuml.jar'
+
+alias python=python3
+alias pip=pip3

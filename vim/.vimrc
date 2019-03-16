@@ -44,7 +44,8 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'scrooloose/nerdcommenter'
- 
+Plug 'tpope/vim-sensible' 
+
 " Initialize plugin system
 call plug#end()
  
